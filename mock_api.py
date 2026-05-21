@@ -13,6 +13,9 @@ database = [
     {"artist": "Wizkid", "title": "Essence"},
     {"artist": "Tiwa Savage", "title": "Water And Garri (Extended Club Mix)"},
     {"artist": "Rema", "title": "Calm Down (with Selena Gomez) - Official Remix"},
+    {"artist": "Rema", "title": "Calm Down"},
+    {"artist": "Rema", "title": "Calms Down"},
+    {"artist": "Rema", "title": "palms Down"},
     {"artist": "Olamide", "title": "Rock (Live Performance Edition)"},
     {"artist": "Tems", "title": "Free Mind (Sped Up Version)"},
     {"artist": "Davido", "title": "Unavailableee "},
@@ -100,3 +103,4 @@ def get_uploaded_artists():
 if __name__ == '__main__':
     print("🚀 Mock JointEarn API running on http://127.0.0.1:5000")
     app.run(port=5000)
+
