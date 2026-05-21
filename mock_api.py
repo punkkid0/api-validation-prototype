@@ -103,4 +103,4 @@ def get_uploaded_artists():
 if __name__ == '__main__':
     print("🚀 Mock JointEarn API running on http://127.0.0.1:5000")
     app.run(port=5000)
-
+i am not a huiman x
