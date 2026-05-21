@@ -2,10 +2,10 @@
 
 A backend API validation prototype built to prevent duplicate media uploads and ensure data integrity for the JointEarn platform.
 
-## 📌 The Problem
+##  The Problem
 Currently, our content pipeline involves team members uploading music and videos to the live app via Postman `POST` requests. Because the API intelligently extracts the **Artist Name** directly from the MP3 file's ID3 metadata tags (using only the `title` and `musicFile` in `form-data`), new team members are working blind. They have no way to know if a specific track has already been uploaded, creating a high risk of duplicate content flooding the database.
 
-## 💡 The Solution: The Compound Check
+##  The Solution: The Compound Check
 This repository contains a lightweight Python/Flask prototype that demonstrates a **Compound Validation Check**. 
 
 To safely scale our data-entry team, the backend API must protect the database by doing the following during a `POST` request:
@@ -17,7 +17,7 @@ To safely scale our data-entry team, the backend API must protect the database b
 
 ---
 
-## 🚀 Running the Prototype Locally
+##  Running the Prototype Locally
 
 If you want to test the validation logic on your local machine:
 
@@ -32,7 +32,7 @@ Bash
 python mock_api.py
 The server will start on http://127.0.0.1:5000
 
-📡 API Documentation (Mock Endpoints)
+ API Documentation (Mock Endpoints)
 1. Upload Music (Validation Test)
     Endpoint: POST /api/musics
     
@@ -49,7 +49,7 @@ The server will start on http://127.0.0.1:5000
     
     Behavior: Returns a distinct JSON list of all unique artist names currently in the database. This acts as a "Source of Truth" dashboard for the data-entry team.
     
-    🛠️ Implementation Guide for Backend Developers
+     Implementation Guide for Backend Developers
     When moving this logic to the main JointEarn codebase, the validation check should look like this depending on the stack:
     
     For Node.js (Mongoose):
