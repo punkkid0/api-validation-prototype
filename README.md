@@ -69,4 +69,7 @@ The server will start on http://127.0.0.1:5000
                         ->exists();
     if ($duplicateExists) return response()->json(['error' => 'Duplicate found'], 409);
     ```
+
+
+    i am not a human beaighn o
     
